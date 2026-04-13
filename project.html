@@ -15,33 +15,37 @@
 
 <body class="project-page">
   <header>
-    <!-- Navbar -->
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-4">
-        <a class="navbar-brand fw-bold" href="#">Stat3m3nt</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="/index.html">Stat3m3nt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-3">
+          <li class="nav-item px-3">
             <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item px-3">
+          </li>
+          <li class="nav-item px-3">
             <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item px-3">
+          </li>
+          <li class="nav-item px-3">
             <a class="nav-link active" href="/project.html">Projects</a>
-            </li>
-            <li class="nav-item px-3">
+          </li>
+          <li class="nav-item px-3">
             <a class="nav-link" href="/contact.html">Contact</a>
-            </li>
+          </li>
         </ul>
+
         <div class="ms-auto">
-            <a href="https://github.com/Stat3m3nt" class="btn btn-outline-light me-2"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/andrew-evboifo-78a655187" class="btn btn-outline-light"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Stat3m3nt" class="btn btn-outline-light me-2" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andrew-evboifo-78a655187" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
         </div>
-        </div>
+      </div>
     </nav>
   </header>
 
@@ -55,133 +59,261 @@
     <div class="floating-shape square"></div>
   </div>
 
-  <!-- Main Section -->
   <main class="text-light py-5 mt-5 position-relative">
     <div class="container py-5">
+
+      <!-- Hero -->
       <section class="text-center mb-5">
         <h1 class="display-3 fw-bold mb-3 text-glow">Projects</h1>
-        <p class="lead mx-auto fade-in" style="max-width: 800px;">
-          A collection of ideas turned into code — from AI and automation to full-stack and creative tools. Each project is a step toward innovation and problem-solving.
+        <p class="lead mx-auto fade-in" style="max-width: 850px;">
+          A curated selection of web, mobile, and software projects that reflect my growth as a developer —
+          from interactive frontends and full-stack builds to mobile apps, APIs, and problem-solving systems.
         </p>
       </section>
 
-      <div class="row g-4">
-        <!-- Project Card -->
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-train-front fs-1 text-warning"></i>
-              <h5 class="fw-bold mt-3">Train Ticket Machine</h5>
-              <p class="small">JavaFX desktop app that simulates a smart ticketing system with seat selection and price calculation.</p>
-              
-              <!-- Progress Bar -->
-               <div class="mt-3">
-                    <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%;" aria-valuenow="30"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <small class="text-muted d-block mt-1">30% Complete</small>
-                    </div>
-              
-                </div>
-            
-            </div>
+      <!-- Featured Projects -->
+      <section class="mb-5">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+          <h2 class="text-warning mb-0">Featured Work</h2>
         </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-brush fs-1 text-info"></i>
-              <h5 class="fw-bold mt-3">Drawing Application</h5>
-              <p class="small">A Java-based drawing tool featuring multiple brush types, color palettes, and image export options.</p>
+        <div class="row g-4">
 
-              <!-- Progress bar -->
-               <div class="mt-3">
-                <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          <!-- GeoSnap -->
+          <div class="col-lg-6">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge bg-danger-subtle text-danger border border-danger mb-2">Mobile App</span>
+                    <h3 class="h4 fw-bold mb-1">GeoSnap Field Reporter</h3>
+                    <p class="text-light-emphasis mb-0">React Native · Expo · Maps · Camera · Location</p>
+                  </div>
+                  <i class="bi bi-phone fs-2 text-warning"></i>
                 </div>
-                    <small class="text-muted d-block mt-1">70% Complete</small>
+
+                <p class="small">
+                  A cross-platform field reporting app that lets users capture photos, tag reports with GPS coordinates,
+                  categorize issues, and view submitted reports on an interactive map.
+                </p>
+
+                <ul class="small ps-3 mb-4">
+                  <li>Built with Expo Router and React Native components</li>
+                  <li>Integrated camera, geolocation, and map-based report visualization</li>
+                  <li>Used context state management to track reports and status updates</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-pill">React Native</span>
+                  <span class="tech-pill">Expo</span>
+                  <span class="tech-pill">TypeScript</span>
+                  <span class="tech-pill">Maps</span>
+                  <span class="tech-pill">Camera</span>
                 </div>
-               </div>
-            </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-people fs-1 text-success"></i>
-              <h5 class="fw-bold mt-3">Employee Sorter</h5>
-              <p class="small">.NET app using LINQ and data grids to organize employees by department, salary, or performance.</p>
-
-              <!-- Progress Bar -->
-               <div class="mt-3">
-                <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                    <div class="progress-bar bg-success" style="width: 75%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75"></div>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://github.com/Stat3m3nt/geosnap-field-reporter" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github me-1"></i> Repo
+                  </a>
                 </div>
-                <small class="text-muted d-block mt-1">75% Complete</small>
-                </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-house fs-1 text-primary"></i>
-              <h5 class="fw-bold mt-3">Business Website</h5>
-              <p class="small">Responsive web app for a cleaning business with service booking, contact form, and testimonials.</p>
-
-              <!-- Progress Bar -->
-               <div class="mt-3">
-                <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                    <div class="progress-bar bg-primary" style="width:10%"></div>
-                </div>
-                <small class="text-muted d-block mt-1">10% Complete</small>
-
-               </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-basket fs-1 text-danger"></i>
-              <h5 class="fw-bold mt-3">Food Delivery Website</h5>
-              <p class="small">An interactive food ordering site with a live menu, cart system, and order confirmation page.</p>
+          <!-- Vine & Dine -->
+          <div class="col-lg-6">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge bg-info-subtle text-info border border-info mb-2">Web App</span>
+                    <h3 class="h4 fw-bold mb-1">Vine &amp; Dine Winery Explorer</h3>
+                    <p class="text-light-emphasis mb-0">JavaScript · Bootstrap · Google Maps API</p>
+                  </div>
+                  <i class="bi bi-geo-alt fs-2 text-info"></i>
+                </div>
 
-                <!-- Progress Bar -->
-                 <div class="mt-3">
-                    <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <small class="text-muted d-block mt-1">50% Complete</small>
-                    </div>
+                <p class="small">
+                  An interactive winery discovery site featuring custom map markers, filtering, winery details,
+                  and route directions for exploring Niagara wine destinations.
+                </p>
+
+                <ul class="small ps-3 mb-4">
+                  <li>Displayed winery locations with custom markers and info windows</li>
+                  <li>Added category filters and route generation with directions support</li>
+                  <li>Built a polished responsive UI with Bootstrap and custom styling</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-pill">HTML</span>
+                  <span class="tech-pill">CSS</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Bootstrap</span>
+                  <span class="tech-pill">Google Maps API</span>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://github.com/Stat3m3nt/vine-and-dine-winery-explorer" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github me-1"></i> Repo
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
-            <div class="card-body text-center">
-              <i class="bi bi-globe-americas fs-1 text-warning"></i>
-              <h5 class="fw-bold mt-3">Satellite Image Analyzer</h5>
-              <p class="small">Python project using OpenCV and TensorFlow to detect terrain and environmental changes from imagery.</p>
-                <!-- Progress Bar -->
-                 <div class="mt-3">
-                        <div class="progress bg-secondary bg-opacity-25" style="height:8px;">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <small class="text-muted d-block mt-1">65% Complete</small>
+          <!-- Reactive Deck -->
+          <div class="col-lg-6">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge bg-success-subtle text-success border border-success mb-2">Frontend App</span>
+                    <h3 class="h4 fw-bold mb-1">Reactive Deck</h3>
+                    <p class="text-light-emphasis mb-0">React · Vite · State Management</p>
+                  </div>
+                  <i class="bi bi-suit-spade fs-2 text-success"></i>
+                </div>
+
+                <p class="small">
+                  A dynamic card manipulation app built in React that simulates a full 52-card deck with interactive dealing,
+                  tossing, regrouping, and wildcard features.
+                </p>
+
+                <ul class="small ps-3 mb-4">
+                  <li>Generated and managed a full shuffled deck with reusable utilities</li>
+                  <li>Implemented interactive card actions and game-style controls</li>
+                  <li>Designed a polished UI with component-based architecture</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-pill">React</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Vite</span>
+                  <span class="tech-pill">CSS</span>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://github.com/Stat3m3nt/reactive-deck-of-cards" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github me-1"></i> Repo
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Pawffee Break -->
+          <div class="col-lg-6">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <span class="badge bg-warning-subtle text-warning border border-warning mb-2">CMS Project</span>
+                    <h3 class="h4 fw-bold mb-1">Pawffee Break</h3>
+                    <p class="text-light-emphasis mb-0">WordPress · Child Theme · Plugins · Block Theme</p>
+                  </div>
+                  <i class="bi bi-cup-hot fs-2 text-warning"></i>
+                </div>
+
+                <p class="small">
+                  A branded pet café website built in WordPress using a custom child theme, reusable block patterns,
+                  and plugin integrations for enhanced functionality.
+                </p>
+
+                <ul class="small ps-3 mb-4">
+                  <li>Created a child theme and customized a block-based WordPress site</li>
+                  <li>Integrated plugins for added functionality and content structure</li>
+                  <li>Focused on layout consistency, branding, and responsive presentation</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="tech-pill">WordPress</span>
+                  <span class="tech-pill">PHP</span>
+                  <span class="tech-pill">CSS</span>
+                  <span class="tech-pill">Block Themes</span>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="https://github.com/Stat3m3nt/pawffee-break-website" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github me-1"></i> Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </section>
+
+      <!-- Additional Projects -->
+      <section class="mb-5">
+        <h2 class="text-warning mb-4">More Projects</h2>
+
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-check2-square fs-1 text-primary"></i>
+                <h4 class="fw-bold mt-3">To-Do App API</h4>
+                <p class="small text-light-emphasis">React · Express · Redis</p>
+                <p class="small">
+                  A task management app with a backend API and Redis storage for creating, updating, and removing tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-grid-3x3-gap fs-1 text-danger"></i>
+                <h4 class="fw-bold mt-3">Battleship AI Bot</h4>
+                <p class="small text-light-emphasis">Java · Algorithms · Game Logic</p>
+                <p class="small">
+                  A strategy-based Battleship bot focused on efficient targeting, scoring performance, and algorithmic optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card bg-dark bg-opacity-50 border-light rounded-4 h-100 shadow-lg">
+              <div class="card-body p-4 text-center">
+                <i class="bi bi-diagram-3 fs-1 text-info"></i>
+                <h4 class="fw-bold mt-3">PHP Systems Projects</h4>
+                <p class="small text-light-emphasis">PHP · JSON · Sessions · File I/O</p>
+                <p class="small">
+                  Coursework projects involving backend logic, data handling, session state, and structured JSON responses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="text-center mt-5">
+        <div class="p-4 p-md-5 border border-secondary rounded-4 bg-dark bg-opacity-25">
+          <h2 class="fw-bold text-glow mb-3">Want to see more?</h2>
+          <p class="mb-4 mx-auto" style="max-width: 700px;">
+            I’m actively building more web, software, and mobile projects as I grow my portfolio.
+            You can explore more of my work on GitHub or reach out if you'd like to collaborate.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a href="https://github.com/Stat3m3nt" class="btn btn-outline-light btn-lg cta-btn" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-github me-2"></i>View GitHub
+            </a>
+            <a href="/contact.html" class="btn btn-outline-warning btn-lg cta-btn">
+              <i class="bi bi-envelope me-2"></i>Contact Me
+            </a>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="text-center py-4 small border-top border-secondary text-light mt-5">
     <p class="mb-0">&copy; 2025 <span class="text-warning">Stat3m3nt</span> — Built from Curiosity</p>
   </footer>
